@@ -1,16 +1,16 @@
-/* line 3, ../sass/style.scss */
+/* line 3, ../sass/style.back.scss */
 body {
   background-color: white;
   height: 2000px;
 }
 
-/* line 8, ../sass/style.scss */
+/* line 8, ../sass/style.back.scss */
 .berlin-wrap {
   width: 100%;
   background: blue url(../images/berlin.jpg) repeat center top;
   background-color: transparent;
 }
-/* line 13, ../sass/style.scss */
+/* line 13, ../sass/style.back.scss */
 .berlin-wrap .curtains {
   position: absolute;
   height: 600px;
@@ -18,7 +18,7 @@ body {
   width: 100%;
   background: blue url(../images/curtains.png) repeat center top;
 }
-/* line 21, ../sass/style.scss */
+/* line 21, ../sass/style.back.scss */
 .berlin-wrap h1, .berlin-wrap h2, .berlin-wrap p {
   color: white;
   text-shadow: 4px 4px 1px rgba(90, 135, 170, 0.5);
@@ -26,7 +26,7 @@ body {
   position: absolute;
   left: 50px;
 }
-/* line 28, ../sass/style.scss */
+/* line 28, ../sass/style.back.scss */
 .berlin-wrap p {
   top: 80px;
   font-family: 'Kaushan Script';
@@ -35,27 +35,27 @@ body {
   line-height: 80px;
   opacity: 1;
 }
-/* line 36, ../sass/style.scss */
+/* line 36, ../sass/style.back.scss */
 .berlin-wrap h1 {
   font-family: 'Bangers';
   top: 350px;
   font-size: 80px;
 }
-/* line 41, ../sass/style.scss */
+/* line 41, ../sass/style.back.scss */
 .berlin-wrap h2 {
   font-family: 'Chau Philomene One';
   top: 350px;
   left: 650px;
   font-size: 50px;
 }
-/* line 47, ../sass/style.scss */
+/* line 47, ../sass/style.back.scss */
 .berlin-wrap .overlay {
   background-color: white;
   opacity: 0.1;
   width: 100%;
   height: 100%;
 }
-/* line 54, ../sass/style.scss */
+/* line 54, ../sass/style.back.scss */
 .berlin-wrap .wall {
   width: 110px;
   height: 146px;
@@ -66,7 +66,7 @@ body {
   cursor: pointer;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 65, ../sass/style.back.scss */
 .berlin {
   width: 1240px;
   height: 600px;
@@ -75,37 +75,37 @@ body {
   position: relative;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 72, ../sass/style.back.scss */
 .berlin2 {
   opacity: 0.9;
 }
 
-/* line 77, ../sass/style.scss */
+/* line 77, ../sass/style.back.scss */
 body.hover .wall {
   top: 243px;
   left: 371px;
   width: 316px;
   height: 419px;
 }
-/* line 83, ../sass/style.scss */
+/* line 83, ../sass/style.back.scss */
 body.hover h1, body.hover h2 {
   opacity: 1;
 }
-/* line 86, ../sass/style.scss */
+/* line 86, ../sass/style.back.scss */
 body.hover h1 {
   transition: opacity 2s;
 }
-/* line 89, ../sass/style.scss */
+/* line 89, ../sass/style.back.scss */
 body.hover h2 {
   transition: opacity 4s;
 }
-/* line 92, ../sass/style.scss */
+/* line 92, ../sass/style.back.scss */
 body.hover .berlin p {
   opacity: 0;
   transition: opacity 6s;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 100, ../sass/style.back.scss */
 body.scrolled .berlin-wrap {
   position: fixed;
   height: 80px;
@@ -113,17 +113,17 @@ body.scrolled .berlin-wrap {
   transition: height 1s;
   z-index: 200;
 }
-/* line 105, ../sass/style.scss */
+/* line 105, ../sass/style.back.scss */
 body.scrolled .berlin-wrap h1 {
   top: 10px;
   color: #33668F;
   transition: color 3s;
 }
-/* line 110, ../sass/style.scss */
+/* line 110, ../sass/style.back.scss */
 body.scrolled .berlin-wrap h2 {
   top: 10px;
 }
-/* line 113, ../sass/style.scss */
+/* line 113, ../sass/style.back.scss */
 body.scrolled .berlin-wrap .wall {
   top: -97px;
   margin-top: 80px;
@@ -132,21 +132,21 @@ body.scrolled .berlin-wrap .wall {
   width: 110px;
   height: 146px;
 }
-/* line 120, ../sass/style.scss */
+/* line 120, ../sass/style.back.scss */
 body.scrolled .berlin-wrap .wall:hover {
   opacity: 0.8;
 }
-/* line 124, ../sass/style.scss */
+/* line 124, ../sass/style.back.scss */
 body.scrolled .berlin-wrap .overlay {
   opacity: 0.6;
   transition: opacity 3s;
 }
-/* line 130, ../sass/style.scss */
+/* line 130, ../sass/style.back.scss */
 body.scrolled .berlin {
   background-position-y: -340px;
   height: 80px;
 }
-/* line 134, ../sass/style.scss */
+/* line 134, ../sass/style.back.scss */
 body.scrolled .berlin2 {
   z-index: 1;
   background-position-y: -340px !important;
@@ -160,12 +160,12 @@ body.scrolled .berlin2 {
   background-attachment: fixed;
 }
 
-/* line 148, ../sass/style.scss */
+/* line 148, ../sass/style.back.scss */
 section {
   min-height: 600px;
   clear: both;
 }
-/* line 152, ../sass/style.scss */
+/* line 152, ../sass/style.back.scss */
 section h2, section h3 {
   text-align: center;
   font-family: 'Chau Philomene One';
@@ -174,19 +174,104 @@ section h2, section h3 {
   padding-top: 50px;
   color: #5a87aa;
 }
-/* line 160, ../sass/style.scss */
+/* line 160, ../sass/style.back.scss */
 section h3 {
   font-size: 50px;
   padding-top: 10px;
 }
+/* line 165, ../sass/style.back.scss */
+section.i-use {
+  background: #2D2B41 url(../images/what-i-use.jpg) no-repeat;
+  background-size: auto 100%;
+  height: 600px;
+  perspective: 420px;
+  /*div.images {
+  	transform: rotateY(60deg);
+  }*/
+  overflow: hidden;
+  /*\div.image-wrap1 {
+  	overflow: hidden;
+  	width: 720px;
+  	position: relative;
+  	float: left;
+  }*/
+}
+/* line 170, ../sass/style.back.scss */
+section.i-use h2 {
+  color: white;
+  float: right;
+  margin-right: 200px;
+  position: absolute;
+}
+/* line 190, ../sass/style.back.scss */
+section.i-use .image-wrap1 {
+  width: 1440px;
+}
+/* line 193, ../sass/style.back.scss */
+section.i-use div.images {
+  transform: rotateY(80deg);
+  overflow: hidden;
+  *zoom: 1;
+  z-index: 10;
+  width: auto;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  white-space: nowrap;
+}
+/* line 207, ../sass/style.back.scss */
+section.i-use div.images img {
+  height: 180px;
+  opacity: 0.9;
+  margin: 20px 5px;
+  box-sizing: border-box;
+  background-color: white;
+}
+/* line 212, ../sass/style.back.scss */
+section.i-use div.images img.white {
+  padding: 10px;
+}
+/* line 218, ../sass/style.back.scss */
+section.i-use div.image-wrap {
+  float: left;
+  margin-left: 720px;
+  height: 600px;
+  overflow: hidden;
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  width: 100%;
+}
+/* line 227, ../sass/style.back.scss */
+section.i-use div.images2 {
+  transform: none;
+  z-index: 20;
+  margin-left: -720px;
+  right: -720px;
+  width: auto;
+}
+/* line 234, ../sass/style.back.scss */
+section.i-use div.images2 img {
+  opacity: 1;
+}
+/* line 238, ../sass/style.back.scss */
+section.i-use .leaning {
+  height: 600px;
+  position: absolute;
+  left: 338px;
+  top: 0;
+  z-index: 100;
+  transform: rotateY(0);
+}
 
-/* line 172, ../sass/style.scss */
+/* line 251, ../sass/style.back.scss */
 section.i-do ul.summary {
   background-color: white;
   list-style: none;
   margin: 0 auto;
 }
-/* line 179, ../sass/style.scss */
+/* line 258, ../sass/style.back.scss */
 section.i-do ul.summary li {
   padding: 20px;
   box-sizing: border-box;
@@ -195,38 +280,38 @@ section.i-do ul.summary li {
   clear: both;
   border: solid 10px transparent;
 }
-/* line 185, ../sass/style.scss */
+/* line 264, ../sass/style.back.scss */
 section.i-do ul.summary li.web-dev {
   background-color: #2e9591;
   width: 0;
 }
-/* line 188, ../sass/style.scss */
+/* line 267, ../sass/style.back.scss */
 section.i-do ul.summary li.web-dev:hover {
   width: auto;
   transition: width 10s;
 }
-/* line 193, ../sass/style.scss */
+/* line 272, ../sass/style.back.scss */
 section.i-do ul.summary li.design {
   background-color: #ddb249;
   width: 0;
 }
-/* line 197, ../sass/style.scss */
+/* line 276, ../sass/style.back.scss */
 section.i-do ul.summary li.responsive {
   background-color: #b4113c;
   width: 0;
 }
-/* line 201, ../sass/style.scss */
+/* line 280, ../sass/style.back.scss */
 section.i-do ul.summary li.global {
   background-color: #4f1cb9;
   width: 0;
 }
-/* line 206, ../sass/style.scss */
+/* line 285, ../sass/style.back.scss */
 section.i-do ul.summary li img, section.i-do ul.summary li object {
   height: 200px;
   margin-right: 50px;
   float: left;
 }
-/* line 212, ../sass/style.scss */
+/* line 291, ../sass/style.back.scss */
 section.i-do ul.summary li h3 {
   font-family: 'Titillium Web', sans-serif;
   font-size: 40px;
@@ -234,11 +319,11 @@ section.i-do ul.summary li h3 {
   color: #5a87aa;
   color: white;
 }
-/* line 220, ../sass/style.scss */
+/* line 299, ../sass/style.back.scss */
 section.i-do ul.summary li div {
   float: left;
 }
-/* line 224, ../sass/style.scss */
+/* line 303, ../sass/style.back.scss */
 section.i-do ul.summary li p {
   float: left;
   font-family: 'Lato', sans-serif;
@@ -247,66 +332,66 @@ section.i-do ul.summary li p {
   margin-bottom: 20px;
   color: white;
 }
-/* line 233, ../sass/style.scss */
+/* line 312, ../sass/style.back.scss */
 section.i-do ul.summary li:hover {
   border: solid 10px rgba(0, 0, 0, 0.2);
 }
-/* line 235, ../sass/style.scss */
+/* line 314, ../sass/style.back.scss */
 section.i-do ul.summary li:hover h3 {
   color: red;
   transition: color 2s;
 }
 
-/* line 248, ../sass/style.scss */
+/* line 327, ../sass/style.back.scss */
 #hollywood {
   max-width: 1240px;
   margin: 0 auto;
 }
-/* line 251, ../sass/style.scss */
+/* line 330, ../sass/style.back.scss */
 #hollywood ul {
   list-style: none;
   padding-left: 0;
 }
-/* line 255, ../sass/style.scss */
+/* line 334, ../sass/style.back.scss */
 #hollywood li {
   width: 25%;
   height: auto;
   margin-top: 60px;
 }
-/* line 261, ../sass/style.scss */
+/* line 340, ../sass/style.back.scss */
 #hollywood li.double {
   width: 55%;
   height: auto;
 }
-/* line 265, ../sass/style.scss */
+/* line 344, ../sass/style.back.scss */
 #hollywood .card {
   height: auto;
   cursor: pointer;
   opacity: 0.6;
 }
-/* line 269, ../sass/style.scss */
+/* line 348, ../sass/style.back.scss */
 #hollywood .card .front, #hollywood .card .back {
   box-shadow: 0 0 5px black;
 }
-/* line 272, ../sass/style.scss */
+/* line 351, ../sass/style.back.scss */
 #hollywood .card:hover {
   opacity: 1;
   transition: opacity 0.5s;
 }
-/* line 275, ../sass/style.scss */
+/* line 354, ../sass/style.back.scss */
 #hollywood .card:hover .front, #hollywood .card:hover .back {
   box-shadow: 0 0 10px black;
 }
-/* line 280, ../sass/style.scss */
+/* line 359, ../sass/style.back.scss */
 #hollywood .card .front {
   height: auto !important;
 }
-/* line 283, ../sass/style.scss */
+/* line 362, ../sass/style.back.scss */
 #hollywood img {
   width: 100%;
 }
 
-/* line 289, ../sass/style.scss */
+/* line 368, ../sass/style.back.scss */
 .typed-cursor {
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
