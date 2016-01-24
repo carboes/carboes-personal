@@ -1,0 +1,221 @@
+<html>
+	<head>
+		<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"></link>
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"></link>
+		<link href='https://fonts.googleapis.com/css?family=Lato|Titillium+Web:600|Bangers|Chau+Philomene+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="stylesheets/style.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+		<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css"></link>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+		<script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
+		<script src="https://fb.me/react-0.14.6.js"></script>
+		<script src="https://fb.me/react-dom-0.14.6.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.css"/>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+      	<script>
+      	$(document).ready(function() {
+      		new WOW().init();
+
+      		$(window).scroll(function() {	
+  				$("body").toggleClass('scrolled', $(document).scrollTop() > 340);
+      		});
+      		$(window).hover(function() {
+      			$("body").addClass("hover");
+      		})
+      		$(".wall").click(function() {
+      			$('html,body').animate({ scrollTop: 0 }, 'slow');
+      		});
+
+      		$('.images').slick({
+			  	variableWidth: true,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 0,
+				speed: 1000,
+				infinite: true,
+			});
+
+
+      		// wait until all the resources are loaded
+			/*window.addEventListener("load", findSVGElements, false);
+			
+			// fetches the document for the given embedding_element
+			function getSubDocument(embedding_element)
+			{
+				if (embedding_element.contentDocument) 
+				{
+					return embedding_element.contentDocument;
+				} 
+				else 
+				{
+					var subdoc = null;
+					try {
+						subdoc = embedding_element.getSVGDocument();
+					} catch(e) {}
+					return subdoc;
+				}
+			}
+					
+			function findSVGElements()
+			{
+				var elms = document.querySelectorAll(".emb");
+				for (var i = 0; i < elms.length; i++)
+				{
+					var subdoc = getSubDocument(elms[i])
+					if (subdoc)
+						subdoc.getElementById("svgbar").setAttribute("fill", "lime");
+				}
+			}*/
+      	});
+
+
+
+      	</script>
+	</head>
+	<body>
+		<div class="berlin-wrap">
+			<div class="berlin">
+				<div class="overlay"></div>
+				<img class="wall" src="images/berlin-wall.png"/>
+				<h1>Carl Peterken</h1>
+				<h2>Creative Technologist</h2>
+			</div>
+		</div>
+
+		<div class="berlin2"></div>
+
+		<section class="i-do">
+			<h2>What I do</h2>
+
+			<ul class="summary">
+				<li class="wow">
+					<object class="emb" type="image/svg+xml" data="icons/Code-Optimization.svg"></object>
+					<h3>Web Development</h3>
+					<p>A decade of commerical experience.  Stacks: .NET, RoR, Node</p>
+				</li>
+				<li class="wow">
+					<img src="icons/brush1.svg" />
+					<h3>UI/UX Design</h3>
+					<p>A decade of commerical experience.  Stacks: .NET, RoR, Node</p>
+				</li>
+				<li class="wow">
+					<img src="icons/responsive-design.svg" />
+					<h3>Responsive Design</h3>
+					<p>A decade of commerical experience.  Stacks: .NET, RoR, Node</p>
+				</li>
+				<li class="wow">
+					<img src="icons/world_1.svg" />
+					<h3>Global Experience</h3>
+					<p>Auckland, Sydney, Melbourne, London, Berlin, Los Angeles, Vancouver, San Francisco</p>
+				</li>
+			</ul>
+
+		</section>
+
+		<!--<section>
+			<div style="background-image: url(images/screen.png); width: 640px; height: 480px;">
+			<p style="color: white; font-size: 60px; padding: 40px; font-weight: bold; font-family: Terminal">> _</p>
+			</div>
+		</section>-->
+
+		<section class="i-use">
+			<h2>What I use</h2>
+
+			<div class="image-wrap1">
+				<div class="images">
+					<img src="logos/nodejs-green.png" />
+					<img src="logos/ms-.net-framework.jpg" />
+					<img src="logos/mongodb-logo.png" class="white" />
+					<img src="logos/wplogoblue-notext-rgb.png" />
+					<img src="logos/HTML5_logo_and_wordmark.svg.png" class="white" />
+					<img src="logos/css3_logo.png" class="white" />
+					<img src="logos/JavaScript-logo.png" />
+					<img src="logos/Git-Logo-2Color-770x321.jpg" />
+					<img src="logos/backbonejs.png" />
+					<img src="logos/React.js_logo.svg.png" />
+					<img src="logos/Ruby_on_Rails.svg.png" class="white" />
+				</div>
+			</div>
+			<div class="image-wrap">
+				<div class="images images2">
+					<img src="logos/nodejs-green.png" />
+					<img src="logos/ms-.net-framework.jpg" />
+					<img src="logos/mongodb-logo.png" class="white" />
+					<img src="logos/wplogoblue-notext-rgb.png" />
+					<img src="logos/HTML5_logo_and_wordmark.svg.png" class="white" />
+					<img src="logos/css3_logo.png" class="white" />
+					<img src="logos/JavaScript-logo.png" />
+					<img src="logos/Git-Logo-2Color-770x321.jpg" />
+					<img src="logos/backbonejs.png" />
+					<img src="logos/React.js_logo.svg.png" />
+					<img src="logos/Ruby_on_Rails.svg.png" class="white" />
+				</div>
+			</div>
+
+			<img src="images/me-leaning.png" class="leaning" />
+
+		</section>
+
+		<section class="i-done">
+			<img src="images/what-have-i-done.jpg" width="200" height="200" style="border-radius: 100px; float: right" />
+
+			<h2>What I've done</h2>
+			<h3>(What have I done?!?)</h3>
+
+			<img src="images/hollywood.jpg"/>
+			
+			<div id="hollywood"></div>
+
+			<script type="text/babel">
+				var Portfolio = React.createClass({
+					getInitialState: function() {
+				    	return {items: ["1ny", "7ib", "9_oa", "4pp.2", "5oh", "6caa", "2td", "3lp", "8lb.2", "9a_ur", "8lb2.2"]};
+				  	},
+					render: function() {
+				    	var createItem = function(item, i) {
+				    		var css = "";
+				    		var item2 = item;
+				    		if (item.indexOf(".2") != -1) {
+				    			css = "double";
+				    			item2 = item.split(".")[0];
+				    		}
+				    		var front = "hollywood/img/"+item2+".jpg";
+				     		var back = "hollywood/img/"+item2+"-.jpg";
+				     		return (<li className={css}><div className="card">
+				     			<div className="front"><img src={front}/></div>
+				     			<div className="back" key="{i}"><img src={back}/></div></div>
+				     		</li>);
+				    	};
+				    	return <ul>{this.state.items.map(createItem)}</ul>;
+				  	}
+				});
+
+				ReactDOM.render(<Portfolio />, document.getElementById("hollywood"));
+
+				$(document).ready(function() {
+					$(".card").flip().each(function() {
+						var el = this
+						setTimeout(function() {
+							$(el).height($("img:first", el)[0].clientHeight);
+						},1000);
+					});
+				});
+				setTimeout(function() {
+					$('#hollywood ul').masonry({
+					 	itemSelector: 'li',
+					 	gutter: 80
+					});
+				}, 2000);
+				
+			</script>
+
+		</section>
+
+	</body>
+</html>

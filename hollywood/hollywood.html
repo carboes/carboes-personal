@@ -1,0 +1,86 @@
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.19/dist/jquery.flip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.js"></script>
+<script src="https://fb.me/react-0.14.6.js"></script>
+<script src="https://fb.me/react-dom-0.14.6.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.js"></script>
+<style>
+/*li {
+	float: left;
+	width: 200px;
+}*/
+body {
+	margin: 0;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+li {
+	width: 32%;
+	height: auto;
+	margin-top: 10px;
+
+}
+li.double {
+	width: 64%;
+	height: auto;
+}
+.card {
+	height: auto;
+}
+.card .front {
+	height: auto !important;
+}
+img {
+	width: 100%;
+}
+
+</style>
+
+<div id="example"></div>
+
+<script type="text/babel">
+	var Portfolio = React.createClass({
+		getInitialState: function() {
+	    	return {items: ["1ny", "7ib", "9_oa", "4pp.2", "5oh", "6caa", "2td", "3lp", "8lb.2", "9a_ur", "8lb2.2"]};
+	  	},
+		render: function() {
+	    	var createItem = function(item, i) {
+	    		var css = "";
+	    		var item2 = item;
+	    		if (item.indexOf(".2") != -1) {
+	    			css = "double";
+	    			item2 = item.split(".")[0];
+	    		}
+	    		var front = "img/"+item2+".jpg";
+	     		var back = "img/"+item2+"-.jpg";
+	     		return (<li className={css}><div className="card">
+	     			<div className="front"><img src={front}/></div>
+	     			<div className="back" key="{i}"><img src={back}/></div></div>
+	     		</li>);
+	    	};
+	    	return <ul>{this.state.items.map(createItem)}</ul>;
+	  	}
+	});
+
+	ReactDOM.render(<Portfolio />, document.getElementById("example"));
+
+	$(document).ready(function() {
+		$(".card").flip().each(function() {
+			var el = this
+			setTimeout(function() {
+				$(el).height($("img:first", el)[0].clientHeight);
+			},1000);
+			//console.log(height);
+			//$(this).height(height);
+		});
+	});
+	setTimeout(function() {
+		$('#example ul').masonry({
+		 	itemSelector: 'li',
+		 	gutter: 10
+		});
+	}, 2000);
+	
+</script>
