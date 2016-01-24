@@ -113,7 +113,7 @@ body.scrolled {
 	}
 	.berlin2 {
 		z-index: 1;
-		background-position-y: -340px;
+		background-position-y: -340px !important;
 		height: 600px;
 		width: 100%;
 		margin: 0 auto;
@@ -121,11 +121,13 @@ body.scrolled {
 		position: relative;
 		opacity: 0.4;
 		transition: opacity 3s;
+		background-attachment: fixed;
 	}
 }
 
 section {
 	min-height: 600px;
+	clear: both;
 
 	h2, h3 {
 		text-align: center;
@@ -164,6 +166,10 @@ section {
 			position: relative;
 			float: left;
 		}*/
+
+		.image-wrap1 {
+			width: 1440px;
+		}
 		div.images {
 			//display: none;
 			transform: rotateY(80deg);
@@ -174,6 +180,7 @@ section {
 			top: 150px;
 			left: 0;
 			right: 0;
+			//width: 1440px;
 			white-space: nowrap;
 			//padding-left: 0;
 			//margin: 0 auto;
@@ -202,6 +209,7 @@ section {
 			z-index: 20;
 			margin-left: -720px;
 			right: -720px;
+			width: auto;
 			//margin-left: -725px;
 			img {
 				opacity: 1;
@@ -219,34 +227,37 @@ section {
 }
 
 section.i-do {
+	margin-top: 70px;
 	ul.summary {
-		height: 400px;
+		//height: 400px;
 		padding-top: 50px;
 		background-color: white;
 		list-style: none;
 		max-width: 1240px;
 		margin: 0 auto;
 		li {
-			float: left;
-			width: 25%;
-			min-width: 250px;
 			padding: 20px;
 			box-sizing: border-box;
-			//clear: both;
+			clear: both;
+
+			img, object {
+				height: 300px;
+				float: left;
+			}
+
 			h3 {
 				font-family: 'Titillium Web', sans-serif;
-				font-size: 30px;
+				font-size: 40px;
+				text-align: left;
 				color: #5a87aa;
 			}
-			img, object {
-				max-width: 60%;
-				svg {
-					fill: red !important;
-				}
-				//float: left;
-			}
+
 			p {
+				float: left;
 				font-family: 'Lato', sans-serif;
+				font-size: 25px;
+				line-height: 32px;
+				margin-bottom: 20px;
 			}
 			&:hover {
 				h3 {

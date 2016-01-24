@@ -127,7 +127,7 @@ body.scrolled .berlin {
 /* line 114, ../sass/style.scss */
 body.scrolled .berlin2 {
   z-index: 1;
-  background-position-y: -340px;
+  background-position-y: -340px !important;
   height: 600px;
   width: 100%;
   margin: 0 auto;
@@ -135,13 +135,15 @@ body.scrolled .berlin2 {
   position: relative;
   opacity: 0.4;
   transition: opacity 3s;
+  background-attachment: fixed;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 section {
   min-height: 600px;
+  clear: both;
 }
-/* line 130, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 section h2, section h3 {
   text-align: center;
   font-family: 'Chau Philomene One';
@@ -150,12 +152,12 @@ section h2, section h3 {
   padding-top: 50px;
   color: #5a87aa;
 }
-/* line 138, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 section h3 {
   font-size: 50px;
   padding-top: 10px;
 }
-/* line 143, ../sass/style.scss */
+/* line 145, ../sass/style.scss */
 section.i-use {
   background: #2D2B41 url(../images/what-i-use.jpg) no-repeat;
   background-size: auto 100%;
@@ -172,14 +174,18 @@ section.i-use {
   	float: left;
   }*/
 }
-/* line 148, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 section.i-use h2 {
   color: white;
   float: right;
   margin-right: 200px;
   position: absolute;
 }
-/* line 167, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
+section.i-use .image-wrap1 {
+  width: 1440px;
+}
+/* line 173, ../sass/style.scss */
 section.i-use div.images {
   transform: rotateY(80deg);
   overflow: hidden;
@@ -192,7 +198,7 @@ section.i-use div.images {
   right: 0;
   white-space: nowrap;
 }
-/* line 180, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 section.i-use div.images img {
   height: 180px;
   opacity: 0.9;
@@ -200,11 +206,11 @@ section.i-use div.images img {
   box-sizing: border-box;
   background-color: white;
 }
-/* line 185, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 section.i-use div.images img.white {
   padding: 10px;
 }
-/* line 191, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 section.i-use div.image-wrap {
   float: left;
   margin-left: 720px;
@@ -215,18 +221,19 @@ section.i-use div.image-wrap {
   position: relative;
   width: 100%;
 }
-/* line 200, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 section.i-use div.images2 {
   transform: none;
   z-index: 20;
   margin-left: -720px;
   right: -720px;
+  width: auto;
 }
-/* line 206, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 section.i-use div.images2 img {
   opacity: 1;
 }
-/* line 210, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 section.i-use .leaning {
   height: 600px;
   position: absolute;
@@ -236,92 +243,95 @@ section.i-use .leaning {
   transform: rotateY(0);
 }
 
-/* line 222, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
+section.i-do {
+  margin-top: 70px;
+}
+/* line 231, ../sass/style.scss */
 section.i-do ul.summary {
-  height: 400px;
   padding-top: 50px;
   background-color: white;
   list-style: none;
   max-width: 1240px;
   margin: 0 auto;
 }
-/* line 229, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 section.i-do ul.summary li {
-  float: left;
-  width: 25%;
-  min-width: 250px;
   padding: 20px;
   box-sizing: border-box;
-}
-/* line 236, ../sass/style.scss */
-section.i-do ul.summary li h3 {
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 30px;
-  color: #5a87aa;
-}
-/* line 241, ../sass/style.scss */
-section.i-do ul.summary li img, section.i-do ul.summary li object {
-  max-width: 60%;
+  clear: both;
 }
 /* line 243, ../sass/style.scss */
-section.i-do ul.summary li img svg, section.i-do ul.summary li object svg {
-  fill: red !important;
+section.i-do ul.summary li img, section.i-do ul.summary li object {
+  height: 300px;
+  float: left;
 }
 /* line 248, ../sass/style.scss */
-section.i-do ul.summary li p {
-  font-family: 'Lato', sans-serif;
+section.i-do ul.summary li h3 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 40px;
+  text-align: left;
+  color: #5a87aa;
 }
-/* line 252, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
+section.i-do ul.summary li p {
+  float: left;
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+/* line 263, ../sass/style.scss */
 section.i-do ul.summary li:hover h3 {
   color: red;
   transition: color 2s;
 }
 
-/* line 265, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 #hollywood {
   max-width: 1240px;
   margin: 0 auto;
 }
-/* line 268, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 #hollywood ul {
   list-style: none;
   padding-left: 0;
 }
-/* line 272, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 #hollywood li {
   width: 25%;
   height: auto;
   margin-top: 60px;
 }
-/* line 278, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 #hollywood li.double {
   width: 55%;
   height: auto;
 }
-/* line 282, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 #hollywood .card {
   height: auto;
   cursor: pointer;
   opacity: 0.6;
 }
-/* line 286, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 #hollywood .card .front, #hollywood .card .back {
   box-shadow: 0 0 5px black;
 }
-/* line 289, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 #hollywood .card:hover {
   opacity: 1;
   transition: opacity 0.5s;
 }
-/* line 292, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 #hollywood .card:hover .front, #hollywood .card:hover .back {
   box-shadow: 0 0 10px black;
 }
-/* line 297, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 #hollywood .card .front {
   height: auto !important;
 }
-/* line 300, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 #hollywood img {
   width: 100%;
 }
