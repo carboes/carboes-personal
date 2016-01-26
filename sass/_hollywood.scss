@@ -1,0 +1,65 @@
+.i-done {
+
+	position: relative;
+	&:after {
+	background: transparent url(http://www.mappingmegan.com/wp-content/uploads/2013/03/peg1-stars-hollywood-sign.jpg) no-repeat bottom center;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	content: "";
+  	opacity: 0.3;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  position: absolute;
+	  z-index: -1;   
+	}
+}
+
+#hollywood {
+	position: relative;
+	max-width: 1240px;
+	margin: 0 auto;
+	ul {
+		list-style: none;
+		padding-left: 0;
+	}
+	li {
+		width: 17%;
+		height: auto;
+		margin-top: 20px;
+
+	}
+	li.double {
+		width: 38%;
+		height: auto;
+	}
+	.card {
+		height: auto;
+		cursor: pointer;
+		//background-color: white;
+		.front, .back {
+			img {
+				opacity: 0.7;
+				background-color: white;
+			}
+			background-color: white;
+			box-shadow: 0 0 5px black;
+		}
+		&:hover {
+			.front, .back {
+				img {
+					opacity: 1;
+					transition: all 0.5s;
+				}
+				box-shadow: 0 0 10px black;
+			}
+		}
+	}
+	.card .front {
+		height: auto !important;
+	}
+	img {
+		width: 100%;
+	}
+}

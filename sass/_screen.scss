@@ -1,0 +1,53 @@
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+section.i-type {
+    .screen {
+        background-image: url(../images/screen.png);
+        width: 640px;
+        height: 480px;
+        color: white;
+        font: 60px bold 'Consolas';
+        padding: 40px;
+        box-sizing: border-box;
+        float: left;
+    }
+    .experience {
+        img {
+            height: 100px;
+            float: left;
+        }
+    }
+    .education {
+        background-color: black;
+        display: block;
+        float: left;    
+        color: white;
+        height: 464px;
+        background: url(../images/carboes.jpg) repeat 185px top;
+        min-width: 800px;
+    
+    }
+    @include clearfix;
+
+}
