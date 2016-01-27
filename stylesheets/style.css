@@ -210,20 +210,17 @@ body:hover #intro .curtain.draw {
 }
 /* line 164, ../sass/_intro.scss */
 #intro .iris {
-  border: solid 1400px black;
-  border-radius: 100%;
   width: 300%;
-  height: 300%;
+  height: 531.4285714286%;
+  border: solid 3000px black;
+  border-radius: 100%;
   z-index: 100;
   position: absolute;
-  left: -50%;
-  top: -150%;
-  background-color: trans;
   box-sizing: border-box;
   opacity: 0.5;
   z-index: 250;
 }
-/* line 180, ../sass/_intro.scss */
+/* line 183, ../sass/_intro.scss */
 .start #intro .iris {
   border-width: 0px;
   left: -80%;
@@ -232,81 +229,91 @@ body:hover #intro .curtain.draw {
   width: 350%;
   height: 350%;
 }
-/* line 190, ../sass/_intro.scss */
+/* line 193, ../sass/_intro.scss */
 #intro .berlin-skyline {
   width: 100%;
   height: auto;
   bottom: 0;
   position: absolute;
 }
-/* line 201, ../sass/_intro.scss */
+/* line 204, ../sass/_intro.scss */
 .scrolling #intro .berlin-skyline {
-  background-position-y: -340px;
   height: 80px;
   transition: all 1s;
 }
-/* line 208, ../sass/_intro.scss */
+/* line 211, ../sass/_intro.scss */
 #intro .background {
   width: 100%;
   height: auto;
+  z-index: 50;
 }
-/* line 217, ../sass/_intro.scss */
+/* line 219, ../sass/_intro.scss */
+.scrolling #intro .background {
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0.4;
+  margin-top: -50%;
+  transition: all 1s;
+}
+/* line 229, ../sass/_intro.scss */
 #intro h1.full-name {
   font-family: 'Bangers';
-  top: 280px;
-  font-size: 12%;
-  left: -500px;
+  top: 50%;
+  font-size: 7vw;
+  left: -100%;
+  margin: 0;
   z-index: 200;
 }
-/* line 226, ../sass/_intro.scss */
+/* line 239, ../sass/_intro.scss */
 .start #intro h1.full-name {
-  left: 50px;
+  left: 5%;
   transition: left 1s 5s;
 }
-/* line 230, ../sass/_intro.scss */
+/* line 243, ../sass/_intro.scss */
 .scrolling #intro h1.full-name {
   top: 0;
   transition: top 1s;
 }
-/* line 235, ../sass/_intro.scss */
+/* line 249, ../sass/_intro.scss */
 #intro h2.job-title {
   font-family: 'Chau Philomene One';
-  top: 400px;
-  font-size: 50px;
-  right: -500px;
+  margin: 0;
+  top: 70%;
+  font-size: 5vw;
+  right: -100%;
   z-index: 200;
 }
-/* line 243, ../sass/_intro.scss */
+/* line 261, ../sass/_intro.scss */
 .start #intro h2.job-title {
-  right: 300px;
+  right: 10%;
   transition: right 1s 6s;
 }
-/* line 247, ../sass/_intro.scss */
+/* line 265, ../sass/_intro.scss */
 .scrolling #intro h2.job-title {
   top: 0;
   transition: top 1s;
 }
-/* line 252, ../sass/_intro.scss */
+/* line 270, ../sass/_intro.scss */
 #intro .lightbulb {
   background: transparent url(../images/lightbulb-off.png) no-repeat center center;
-  width: 160px;
-  height: 160px;
-  background-size: auto 160px;
-  top: 220px;
+  width: 15%;
+  height: 22%;
+  background-size: auto 100%;
+  bottom: 35%;
   position: absolute;
-  right: 450px;
+  right: 30%;
   opacity: 0;
   z-index: 200;
   -webkit-filter: drop-shadow(4px 4px 0px #5a87aa);
   filter: drop-shadow(4px 4px 0px #5a87aa);
 }
-/* line 266, ../sass/_intro.scss */
+/* line 284, ../sass/_intro.scss */
 .start #intro .lightbulb {
   background-image: url(../images/lightbulb.png);
   opacity: 1;
   transition: opacity 1s 6s, background 0.5s 7.5s;
 }
-/* line 272, ../sass/_intro.scss */
+/* line 290, ../sass/_intro.scss */
 .scrolling #intro .lightbulb {
   top: 0;
   right: 100px;
@@ -314,7 +321,7 @@ body:hover #intro .curtain.draw {
   background-size: auto 80px;
   transition: all 1s;
 }
-/* line 281, ../sass/_intro.scss */
+/* line 299, ../sass/_intro.scss */
 #intro .overlay {
   background-color: black;
   opacity: 0;
@@ -325,12 +332,12 @@ body:hover #intro .curtain.draw {
   bottom: 0;
   z-index: 50;
 }
-/* line 288, ../sass/_intro.scss */
+/* line 306, ../sass/_intro.scss */
 .start #intro .overlay {
   opacity: 0.4;
   transition: opacity 3s 4s;
 }
-/* line 294, ../sass/_intro.scss */
+/* line 312, ../sass/_intro.scss */
 #intro .wall {
   width: 8.8709677419%;
   height: auto;
@@ -340,7 +347,7 @@ body:hover #intro .curtain.draw {
   position: absolute;
   cursor: pointer;
 }
-/* line 306, ../sass/_intro.scss */
+/* line 324, ../sass/_intro.scss */
 .start #intro .wall {
   bottom: 5.4%;
   left: 29.9%;
@@ -348,12 +355,12 @@ body:hover #intro .curtain.draw {
   height: auto;
   transition: bottom 5s ease-out 1.5s, left 5s ease-out 1.5s, width 5s ease-out 1.5s, height 5s ease-out 1.5s, filter 1s 0s;
 }
-/* line 318, ../sass/_intro.scss */
+/* line 336, ../sass/_intro.scss */
 .start #intro .wall:hover {
   -webkit-filter: drop-shadow(40px 40px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-40px -40px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-40px 40px 0 rgba(0, 0, 255, 0.5)) drop-shadow(40px -40px 0 rgba(255, 255, 0, 0.5));
   filter: drop-shadow(40px 40px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-40px -40px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-40px 40px 0 rgba(0, 0, 255, 0.5)) drop-shadow(40px -40px 0 rgba(255, 255, 0, 0.5));
 }
-/* line 323, ../sass/_intro.scss */
+/* line 341, ../sass/_intro.scss */
 .scrolling #intro .wall {
   top: -97px;
   margin-top: 80px;
@@ -362,7 +369,7 @@ body:hover #intro .curtain.draw {
   width: 110px;
   height: 146px;
 }
-/* line 330, ../sass/_intro.scss */
+/* line 348, ../sass/_intro.scss */
 .scrolling #intro .wall:hover {
   -webkit-filter: drop-shadow(10px 10px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-20px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-10px 10px 0 rgba(0, 0, 255, 0.5)) drop-shadow(0px 0 rgba(255, 255, 0, 0.5));
   filter: drop-shadow(10px 10px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-20px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-10px 10px 0 rgba(0, 0, 255, 0.5)) drop-shadow(0px 0 rgba(255, 255, 0, 0.5));

@@ -162,15 +162,18 @@ body {
 	}
 
 	.iris {
-		border: solid 1400px black;
+		width: 300%;
+		height: (1240px/700px)*300%;
+		border: solid 3000px black;
+		//border: solid 1400px black;
 	    border-radius: 100%;
-	    width: 300%;//2800px;
-	    height: 300%;//2800px;
+	    //width: 300%;//2800px;
+	    //height: 300%;//2800px;
 	    z-index: 100;
 	    position: absolute;
-	    left: -50%;//-100%;//-600px;
-	    top: -150%;//-1100px;
-	    background-color: trans;
+	    //left: -50%;//-100%;//-600px;
+	    //top: -150%;//-1100px;
+	    //background-color: trans;
 	    box-sizing: border-box;
 	    //display: none;
 	    opacity: 0.5;
@@ -199,7 +202,7 @@ body {
 		//background-size: 100% auto;
 
 		.scrolling & {
-			background-position-y: -340px;
+			//background-position-y: -340px;
 			height: 80px;
 			transition: all 1s;
 		}
@@ -208,40 +211,55 @@ body {
 	.background {
 		width: 100%;
 		height: auto;
+		z-index: 50;
 		//position: absolute;
 		//bottom: 0;
 		//left: 0;
 		//right: 0;
+		.scrolling & {
+			bottom: 0;
+			overflow: hidden;
+			opacity: 0.4;
+			margin-top: -50%;
+			//position: absolute;
+			transition: all 1s;
+		}
 	}
 	
 	h1.full-name {
 		font-family: 'Bangers';
-		top: 280px;
+		top: 50%;//280px;
 		//font-size: 80px;
-		font-size: 12%;
-		left: -500px;
+		font-size: 7vw;
+		left: -100%;
+		margin: 0;
 
 		z-index: 200;
 
 		.start & {
-			left: 50px;
+			left: 5%;
 			transition: left 1s 5s;
 		}
 		.scrolling & {
 			top: 0;
+			//bottom: auto;
 			transition: top 1s;
 		}
 	}
 	h2.job-title {
 		font-family: 'Chau Philomene One';
-		top: 400px;
+		margin: 0;
+		//bottom: 20%;
+		//top: 400px;
 		//left: 650px;
-		font-size: 50px;
-		right: -500px;
+		//font-size: 50px;
+		top: 70%;
+		font-size: 5vw;
+		right: -100%;
 
 		z-index: 200;
 		.start & {
-			right: 300px;
+			right: 10%;
 			transition: right 1s 6s;
 		}
 		.scrolling & {
@@ -251,12 +269,12 @@ body {
 	}
 	.lightbulb {
 	    background: transparent url(../images/lightbulb-off.png) no-repeat center center;
-	    width: 160px;
-	    height: 160px;
-	    background-size: auto 160px;
-	    top: 220px;
+	    width: 15%;//160px;
+	    height: 22%;//160px;
+	    background-size: auto 100%;
+	    bottom: 35%;
 	    position: absolute;
-	    right: 450px;
+	    right: 30%;
 	    opacity: 0;
 
 	    z-index: 200;
