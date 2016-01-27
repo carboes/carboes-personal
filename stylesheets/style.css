@@ -160,13 +160,14 @@ body:hover #intro .curtain.draw {
 #intro .spotlight {
   position: absolute;
   z-index: 300;
-  opacity: 0.7;
   background: white;
-  width: 200px;
-  height: 200px;
-  border-radius: 150px;
-  box-shadow: 0px 0px 100px #ffffb4;
-  border: solid 30px rgba(255, 255, 200, 0.6);
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  box-shadow: 0px 0px 50px #ffffb4;
+  border: solid 50px rgba(255, 255, 200, 0.6);
+  opacity: 0.5;
+  box-sizing: border-box;
   cursor: pointer !important;
   top: -300px;
   left: -300px;
@@ -174,22 +175,22 @@ body:hover #intro .curtain.draw {
 /* line 117, ../sass/_intro.scss */
 .start #intro .spotlight {
   transition: all 1s ease-in, opacity 1s ease-in 0.5s;
-  left: 720px !important;
-  top: 250px !important;
+  left: 66.4516129032% !important;
+  bottom: 36.8571428571% !important;
   opacity: 0;
 }
-/* line 124, ../sass/_intro.scss */
+/* line 126, ../sass/_intro.scss */
 .scrolling #intro .spotlight {
   transition: display 0s;
   display: none !important;
 }
-/* line 130, ../sass/_intro.scss */
+/* line 132, ../sass/_intro.scss */
 #intro h1, #intro h2, #intro p {
   color: white;
-  text-shadow: 4px 4px 1px rgba(90, 135, 170, 0.5);
+  text-shadow: 4px 4px 1px #5a87aa;
   position: absolute;
 }
-/* line 136, ../sass/_intro.scss */
+/* line 138, ../sass/_intro.scss */
 #intro p.introducing {
   top: 30px;
   font-family: 'Kaushan Script';
@@ -199,14 +200,15 @@ body:hover #intro .curtain.draw {
   line-height: 80px;
   opacity: 1;
   z-index: 400;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6);
 }
-/* line 146, ../sass/_intro.scss */
+/* line 149, ../sass/_intro.scss */
 .start #intro p.introducing {
   top: -100px;
   opacity: 0;
   transition: all 1s 3s;
 }
-/* line 153, ../sass/_intro.scss */
+/* line 156, ../sass/_intro.scss */
 #intro .iris {
   border: solid 1400px black;
   border-radius: 3000px;
@@ -218,9 +220,10 @@ body:hover #intro .curtain.draw {
   top: -1100px;
   background-color: trans;
   box-sizing: border-box;
+  display: none;
   z-index: 250;
 }
-/* line 167, ../sass/_intro.scss */
+/* line 171, ../sass/_intro.scss */
 .start #intro .iris {
   border-width: 0px;
   left: -900px;
@@ -229,40 +232,43 @@ body:hover #intro .curtain.draw {
   width: 3000px;
   height: 3000px;
 }
-/* line 177, ../sass/_intro.scss */
+/* line 181, ../sass/_intro.scss */
 #intro .berlin-skyline {
   width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  background: blue url(../images/berlin.jpg) no-repeat center bottom;
-  position: relative;
-  background-size: 100% auto;
+  height: auto;
+  bottom: 0;
+  position: absolute;
 }
-/* line 186, ../sass/_intro.scss */
+/* line 192, ../sass/_intro.scss */
 .scrolling #intro .berlin-skyline {
   background-position-y: -340px;
   height: 80px;
   transition: all 1s;
 }
-/* line 193, ../sass/_intro.scss */
+/* line 199, ../sass/_intro.scss */
+#intro .background {
+  width: 100%;
+  height: auto;
+}
+/* line 208, ../sass/_intro.scss */
 #intro h1.full-name {
   font-family: 'Bangers';
   top: 280px;
-  font-size: 80px;
+  font-size: 12%;
   left: -500px;
   z-index: 200;
 }
-/* line 201, ../sass/_intro.scss */
+/* line 217, ../sass/_intro.scss */
 .start #intro h1.full-name {
   left: 50px;
   transition: left 1s 5s;
 }
-/* line 205, ../sass/_intro.scss */
+/* line 221, ../sass/_intro.scss */
 .scrolling #intro h1.full-name {
   top: 0;
   transition: top 1s;
 }
-/* line 210, ../sass/_intro.scss */
+/* line 226, ../sass/_intro.scss */
 #intro h2.job-title {
   font-family: 'Chau Philomene One';
   top: 400px;
@@ -270,17 +276,17 @@ body:hover #intro .curtain.draw {
   right: -500px;
   z-index: 200;
 }
-/* line 218, ../sass/_intro.scss */
+/* line 234, ../sass/_intro.scss */
 .start #intro h2.job-title {
   right: 300px;
   transition: right 1s 6s;
 }
-/* line 222, ../sass/_intro.scss */
+/* line 238, ../sass/_intro.scss */
 .scrolling #intro h2.job-title {
   top: 0;
   transition: top 1s;
 }
-/* line 227, ../sass/_intro.scss */
+/* line 243, ../sass/_intro.scss */
 #intro .lightbulb {
   background: transparent url(../images/lightbulb-off.png) no-repeat center center;
   width: 160px;
@@ -294,13 +300,13 @@ body:hover #intro .curtain.draw {
   -webkit-filter: drop-shadow(4px 4px 0px #5a87aa);
   filter: drop-shadow(4px 4px 0px #5a87aa);
 }
-/* line 241, ../sass/_intro.scss */
+/* line 257, ../sass/_intro.scss */
 .start #intro .lightbulb {
   background-image: url(../images/lightbulb.png);
   opacity: 1;
   transition: opacity 1s 6s, background 0.5s 7.5s;
 }
-/* line 247, ../sass/_intro.scss */
+/* line 263, ../sass/_intro.scss */
 .scrolling #intro .lightbulb {
   top: 0;
   right: 100px;
@@ -308,7 +314,7 @@ body:hover #intro .curtain.draw {
   background-size: auto 80px;
   transition: all 1s;
 }
-/* line 256, ../sass/_intro.scss */
+/* line 272, ../sass/_intro.scss */
 #intro .overlay {
   background-color: black;
   opacity: 0;
@@ -319,35 +325,35 @@ body:hover #intro .curtain.draw {
   bottom: 0;
   z-index: 50;
 }
-/* line 263, ../sass/_intro.scss */
+/* line 279, ../sass/_intro.scss */
 .start #intro .overlay {
   opacity: 0.4;
   transition: opacity 3s 4s;
 }
-/* line 269, ../sass/_intro.scss */
+/* line 285, ../sass/_intro.scss */
 #intro .wall {
-  width: 110px;
-  height: 146px;
-  left: 824px;
-  top: 296px;
+  width: 8.8709677419%;
+  height: auto;
+  left: 66.4516129032%;
+  bottom: 36.8571428571%;
   z-index: 100;
   position: absolute;
   cursor: pointer;
 }
-/* line 280, ../sass/_intro.scss */
+/* line 297, ../sass/_intro.scss */
 .start #intro .wall {
-  top: 243px;
-  left: 371px;
-  width: 316px;
-  height: 419px;
-  transition: top 5s ease-out 1.5s, left 5s ease-out 1.5s, width 5s ease-out 1.5s, height 5s ease-out 1.5s, filter 1s 0s;
+  bottom: 5.4%;
+  left: 29.9%;
+  width: 25.5%;
+  height: auto;
+  transition: bottom 5s ease-out 1.5s, left 5s ease-out 1.5s, width 5s ease-out 1.5s, height 5s ease-out 1.5s, filter 1s 0s;
 }
-/* line 291, ../sass/_intro.scss */
+/* line 309, ../sass/_intro.scss */
 .start #intro .wall:hover {
   -webkit-filter: drop-shadow(40px 40px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-40px -40px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-40px 40px 0 rgba(0, 0, 255, 0.5)) drop-shadow(40px -40px 0 rgba(255, 255, 0, 0.5));
   filter: drop-shadow(40px 40px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-40px -40px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-40px 40px 0 rgba(0, 0, 255, 0.5)) drop-shadow(40px -40px 0 rgba(255, 255, 0, 0.5));
 }
-/* line 296, ../sass/_intro.scss */
+/* line 314, ../sass/_intro.scss */
 .scrolling #intro .wall {
   top: -97px;
   margin-top: 80px;
@@ -356,7 +362,7 @@ body:hover #intro .curtain.draw {
   width: 110px;
   height: 146px;
 }
-/* line 303, ../sass/_intro.scss */
+/* line 321, ../sass/_intro.scss */
 .scrolling #intro .wall:hover {
   -webkit-filter: drop-shadow(10px 10px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-20px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-10px 10px 0 rgba(0, 0, 255, 0.5)) drop-shadow(0px 0 rgba(255, 255, 0, 0.5));
   filter: drop-shadow(10px 10px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-20px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-10px 10px 0 rgba(0, 0, 255, 0.5)) drop-shadow(0px 0 rgba(255, 255, 0, 0.5));
@@ -700,32 +706,124 @@ body section#what-i-do.active > ul.summary > li {
 section.i-type {
   overflow: hidden;
   *zoom: 1;
+  position: relative;
 }
 /* line 25, ../sass/_screen.scss */
 section.i-type .screen {
   background-image: url(../images/screen.png);
-  width: 640px;
-  height: 480px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
   color: white;
   font: 60px bold 'Consolas';
   padding: 40px;
   box-sizing: border-box;
   float: left;
 }
-/* line 36, ../sass/_screen.scss */
+/* line 40, ../sass/_screen.scss */
 section.i-type .experience img {
   height: 100px;
   float: left;
 }
-/* line 41, ../sass/_screen.scss */
+/* line 45, ../sass/_screen.scss */
 section.i-type .education {
   background-color: black;
   display: block;
   float: left;
   color: white;
-  height: 464px;
   background: url(../images/carboes.jpg) repeat 185px top;
   min-width: 800px;
+}
+/* line 59, ../sass/_screen.scss */
+section.i-type .screen-front {
+  z-index: 250;
+  position: absolute;
+  left: 0;
+  opacity: 1;
+  top: 0;
+  height: 100%;
+  right: auto;
+}
+/* line 68, ../sass/_screen.scss */
+section.i-type.working .screen {
+  display: none;
+}
+/* line 71, ../sass/_screen.scss */
+section.i-type.working .screen-front {
+  right: 20%;
+  left: auto;
+  opacity: 1;
+  margin: 0 auto;
+  -webkit-filter: drop-shadow(10px 10px 0 red) drop-shadow(-10px 10px 0 red) drop-shadow(10px -10px 0 red) drop-shadow(-10px -10px 0 red);
+  filter: drop-shadow(10px 10px 0 red) drop-shadow(-10px 10px 0 red) drop-shadow(10px -10px 0 red) drop-shadow(-10px -10px 0 red);
+  transition: all 2s;
+}
+/* line 79, ../sass/_screen.scss */
+section.i-type.working .colors {
+  height: 20%;
+  transition: all 2s;
+  opacity: 0.7;
+  width: 100%;
+}
+/* line 87, ../sass/_screen.scss */
+section.i-type .colors {
+  width: 0;
+  margin: 0 auto;
+  height: 20%;
+  z-index: 200;
+  opacity: 0;
+}
+/* line 93, ../sass/_screen.scss */
+section.i-type .colors:hover {
+  opacity: 1 !important;
+}
+/* line 96, ../sass/_screen.scss */
+section.i-type .colors h3 {
+  font-size: 100px;
+  color: white;
+  margin: 0 20px;
+}
+/* line 103, ../sass/_screen.scss */
+section.i-type > .colors:nth-of-type(2) {
+  background-color: red;
+  transition-delay: 0.5s;
+}
+/* line 106, ../sass/_screen.scss */
+section.i-type > .colors:nth-of-type(2) h3 {
+  float: right;
+}
+/* line 111, ../sass/_screen.scss */
+section.i-type > .colors:nth-of-type(3) {
+  background-color: green;
+  transition-delay: 1s;
+}
+/* line 114, ../sass/_screen.scss */
+section.i-type > .colors:nth-of-type(3) h3 {
+  float: left;
+}
+/* line 119, ../sass/_screen.scss */
+section.i-type > .colors:nth-of-type(4) {
+  background-color: blue;
+  transition-delay: 1.5s;
+}
+/* line 122, ../sass/_screen.scss */
+section.i-type > .colors:nth-of-type(4) h3 {
+  float: right;
+}
+/* line 127, ../sass/_screen.scss */
+section.i-type > .colors:nth-of-type(5) {
+  background-color: yellow;
+  transition-delay: 2s;
+}
+/* line 130, ../sass/_screen.scss */
+section.i-type > .colors:nth-of-type(5) h3 {
+  float: left;
+}
+/* line 135, ../sass/_screen.scss */
+section.i-type > .colors:nth-of-type(6) {
+  background-color: purple;
+  transition-delay: 2.5s;
 }
 
 /* line 1, ../sass/_tech.scss */

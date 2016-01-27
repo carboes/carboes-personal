@@ -100,24 +100,26 @@ body {
 	.spotlight {
 	    position: absolute;
 	    z-index: 300;
-	    opacity: 0.7;
 	    background: rgba(255,255,255,1);
-		width: 200px;
-	    height: 200px;
-	    border-radius: 150px;
-	    box-shadow: 0px 0px 100px rgba(255,255,180,1);
-	    border: solid 30px rgba(255,255,200,0.6);
+		width: 250px;
+	    height: 250px;
+	    border-radius: 125px;
+	    box-shadow: 0px 0px 50px rgba(255,255,180,1);
+	    border: solid 50px rgba(255,255,200,0.6);
+	    opacity: 0.5;
+	    box-sizing: border-box;
 
 	    cursor: pointer !important;
-		
 
 	    top: -300px;
 		left: -300px;
 
 		.start & {
 			transition: all 1s ease-in, opacity 1s ease-in 0.5s;
-			left: 720px !important;
-    		top: 250px !important;
+			//left: 720px !important;
+    		//top: 250px !important;
+    		left: 824px / 1240px * 100% !important;
+    		bottom: (700px-146px-296px)/700px * 100% !important;
     		opacity: 0;
 		}
 
@@ -129,7 +131,7 @@ body {
 
 	h1, h2, p {
 		color: white;
-		text-shadow: 4px 4px 1px rgba(90,135,170,0.5);
+		text-shadow: 4px 4px 1px rgba(90,135,170,1);
 		position: absolute;
 	}
 
@@ -142,6 +144,7 @@ body {
 	    line-height: 80px;
 	    opacity: 1;
 	    z-index: 400;
+	    text-shadow: 4px 4px 3px rgba(0,0,0,0.6);
 
 	    .start & {
 	    	top: -100px;
@@ -161,6 +164,7 @@ body {
 	    top: -1100px;
 	    background-color: trans;
 	    box-sizing: border-box;
+	    display: none;
 
 	    z-index: 250;
 
@@ -177,11 +181,13 @@ body {
 	.berlin-skyline {
 		//width: 1240px;
 		width: 100%;
-		height: 100%;
-		margin: 0 auto;
-		background: blue url(../images/berlin.jpg) no-repeat center bottom;
-		position: relative;
-		background-size: 100% auto;
+		height: auto;
+		bottom: 0;
+		//height: 100%;
+		//margin: 0 auto;
+		//background: blue url(../images/berlin.jpg) no-repeat center bottom;
+		position: absolute;
+		//background-size: 100% auto;
 
 		.scrolling & {
 			background-position-y: -340px;
@@ -189,11 +195,21 @@ body {
 			transition: all 1s;
 		}
 	}
+
+	.background {
+		width: 100%;
+		height: auto;
+		//position: absolute;
+		//bottom: 0;
+		//left: 0;
+		//right: 0;
+	}
 	
 	h1.full-name {
 		font-family: 'Bangers';
 		top: 280px;
-		font-size: 80px;
+		//font-size: 80px;
+		font-size: 12%;
 		left: -500px;
 
 		z-index: 200;
@@ -267,10 +283,11 @@ body {
 	}
 
 	.wall {
-		width: 110px;
-		height: 146px;
-		left: 824px;
-		top: (296px-0px);
+		width: 110px / 1240px * 100%;
+		height: auto;//146px;
+		left: 824px / 1240px * 100%;
+		//top: (296px / 700px) * 100%;
+		bottom: (700px-146px-296px)/700px * 100%;
 
 		z-index: 100;
 
@@ -278,12 +295,13 @@ body {
 		cursor: pointer;
 
 		.start & {
-			top: (243px-0px);
-			left: 371px;
-			width: 316px;
-			height: 419px;
+			bottom: 5.4%;//(600px - 419px) / 700px * 100%;
+			//top: 34.7%;//(243px-0px);
+			left: 29.9%;//371px;
+			width: 25.5%;//316px / 1240px * 100%;//316px;
+			height: auto;//419px / 700px * 100%;
 			transition:
-				top 5s ease-out 1.5s,
+				bottom 5s ease-out 1.5s,
 				left 5s ease-out 1.5s,
 				width 5s ease-out 1.5s,
 				height 5s ease-out 1.5s,

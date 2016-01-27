@@ -24,8 +24,12 @@
 section.i-type {
     .screen {
         background-image: url(../images/screen.png);
-        width: 640px;
-        height: 480px;
+        //width: 640px;
+        //height: 480px;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
         color: white;
         font: 60px bold 'Consolas';
         padding: 40px;
@@ -43,11 +47,93 @@ section.i-type {
         display: block;
         float: left;    
         color: white;
-        height: 464px;
+        //height: 464px;
         background: url(../images/carboes.jpg) repeat 185px top;
+        
         min-width: 800px;
     
     }
     @include clearfix;
+    position: relative;
 
+    .screen-front {
+        z-index: 250;
+        position: absolute; left: 0; opacity: 1;
+        top: 0;
+        height: 100%;
+        right: auto;
+    }
+
+    &.working {
+        .screen {
+            display: none;
+        }
+        .screen-front {
+            right: 20%;
+            left: auto;
+            opacity: 1;
+            margin: 0 auto;
+            @include filter(drop-shadow(10px 10px 0 red) drop-shadow(-10px 10px 0 red) drop-shadow(10px -10px 0 red) drop-shadow(-10px -10px 0 red));
+            transition: all 2s;
+        }
+        .colors {
+            height: 20%;
+            transition: all 2s;
+            opacity: 0.7;
+            width: 100%;
+        }
+    }
+
+    .colors {
+        width: 0;
+        margin: 0 auto;
+        height: 20%;
+        z-index: 200;
+        opacity: 0;
+        &:hover {
+            opacity: 1 !important;
+        }
+        h3 {
+            font-size: 100px;
+            color: white;
+            margin: 0 20px;
+        }
+    }
+
+    > .colors:nth-of-type(2) {
+        background-color: red;
+        transition-delay: 0.5s;
+        h3 {
+            float: right;
+        }
+    }
+
+    > .colors:nth-of-type(3) {
+        background-color: green;
+        transition-delay: 1s;
+        h3 {
+            float: left;
+        }
+    }
+
+    > .colors:nth-of-type(4) {
+        background-color: blue;
+        transition-delay: 1.5s;
+        h3 {
+            float: right;
+        }
+    }
+
+    > .colors:nth-of-type(5) {
+        background-color: yellow;
+        transition-delay: 2s;
+        h3 {
+            float: left;
+        }
+    }
+
+    > .colors:nth-of-type(6) {
+        background-color: purple;
+        transition-delay: 2.5s;
+    }
 }

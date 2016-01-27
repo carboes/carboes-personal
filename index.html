@@ -27,6 +27,15 @@
 		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/0.1.11/jquery.scrollify.min.js"></script>-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
 
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
       	<script>
       	$(document).ready(function() {
 
@@ -45,15 +54,16 @@
 
       		$(window).mousemove(function(event) {
       			if ($("body").hasClass("start")) return;
-      			$(".spotlight").css("left", event.clientX - $(".spotlight").width()/2);
-      			$(".spotlight").css("top", event.clientY - $(".spotlight").height()/2);
+      			console.log($(".spotlight").width());
+      			$(".spotlight").css("left", event.clientX - ($(".spotlight").outerWidth()/2));
+      			$(".spotlight").css("top", event.clientY - ($(".spotlight").outerHeight()/2));
       		});
 
       		$("section").hover(function() {
       			if ($(this).hasClass("active")) return;
       			$("section").removeClass("active");
       			$(this).addClass("active");
-      			$('html,body').animate({ scrollTop: $(this).offset().top - 80 }, 'slow');
+      			//$('html,body').animate({ scrollTop: $(this).offset().top - 80 }, 'slow');
       		});
 
       		var slicked = false;
@@ -72,8 +82,11 @@
 
       		$(".i-type").hover(function() {
       			$(".screen-text").typed({
-			        strings: [" What do I do?", "I dunno"],
+			        strings: [" So what does Carl do?", "Dunno"],
 			        typeSpeed: 0,cursorChar: "_",
+			    });
+			    $(this).click(function() {
+			    	$(".i-type").addClass("working");
 			    });
       		});
 			
@@ -127,6 +140,7 @@
 			<div class="iris"></div>
 			
 			<div class="berlin-skyline">
+				<img class="background" src="images/berlin.jpg" />
 				<div class="overlay"></div>
 				<img class="wall" src="images/berlin-wall.png"/>
 				<div class="lightbulb"></div>
@@ -218,6 +232,12 @@
 				<div class="screen">
 					<span class="screen-text" style="">> _</span>
 				</div>
+				<div class="colors"><h3>Experience</h3></div>
+				<div class="colors"><h3>Skills</h3></div>
+				<div class="colors"><h3>Portfolio</h3></div>
+				<div class="colors"><h3>Education</h3></div>
+				<div class="colors"></div>
+				<img src="images/screen-front.png" class="screen-front" />
 				<!--<div class="experience">
 					<h3>Experience</h3>
 					<img src="companies/liveops.jpg" />
