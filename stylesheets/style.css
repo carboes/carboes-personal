@@ -110,9 +110,9 @@ body.scrolling #intro {
   left: 0;
   right: 0;
   z-index: 200;
-  background: transparent url(../images/curtains.png) repeat center top;
-  background-size: 100% 100%;
-  height: 100%;
+  background: transparent url(../images/curtains.png) repeat center center;
+  background-size: 100% auto;
+  height: auto;
   z-index: 300;
   -webkit-filter: drop-shadow(0 10px 10px black);
   filter: drop-shadow(0 10px 10px black);
@@ -132,31 +132,31 @@ body.scrolling #intro {
   background: transparent url(../images/curtains2.jpg) repeat center top;
   background-size: 130% auto;
   z-index: 150;
-  transition: all 1s ease-in;
+  transition: left 1s ease-in, right 1s ease-in, opacity 1s 3s;
   opacity: 0.3;
   z-index: 275;
 }
-/* line 80, ../sass/_intro.scss */
+/* line 83, ../sass/_intro.scss */
 body:hover #intro .curtain.draw {
   opacity: 1;
 }
-/* line 85, ../sass/_intro.scss */
+/* line 93, ../sass/_intro.scss */
 #intro .curtain.left {
   left: 0;
 }
-/* line 88, ../sass/_intro.scss */
+/* line 96, ../sass/_intro.scss */
 .start #intro .curtain.left {
   left: -50%;
 }
-/* line 92, ../sass/_intro.scss */
+/* line 100, ../sass/_intro.scss */
 #intro .curtain.right {
   right: 0;
 }
-/* line 94, ../sass/_intro.scss */
+/* line 102, ../sass/_intro.scss */
 .start #intro .curtain.right {
   right: -50%;
 }
-/* line 100, ../sass/_intro.scss */
+/* line 108, ../sass/_intro.scss */
 #intro .spotlight {
   position: absolute;
   z-index: 300;
@@ -172,25 +172,25 @@ body:hover #intro .curtain.draw {
   top: -300px;
   left: -300px;
 }
-/* line 117, ../sass/_intro.scss */
+/* line 125, ../sass/_intro.scss */
 .start #intro .spotlight {
   transition: all 1s ease-in, opacity 1s ease-in 0.5s;
   left: 66.4516129032% !important;
   bottom: 36.8571428571% !important;
   opacity: 0;
 }
-/* line 126, ../sass/_intro.scss */
+/* line 134, ../sass/_intro.scss */
 .scrolling #intro .spotlight {
   transition: display 0s;
   display: none !important;
 }
-/* line 132, ../sass/_intro.scss */
+/* line 140, ../sass/_intro.scss */
 #intro h1, #intro h2, #intro p {
   color: white;
   text-shadow: 4px 4px 1px #5a87aa;
   position: absolute;
 }
-/* line 138, ../sass/_intro.scss */
+/* line 146, ../sass/_intro.scss */
 #intro p.introducing {
   top: 30px;
   font-family: 'Kaushan Script';
@@ -202,55 +202,55 @@ body:hover #intro .curtain.draw {
   z-index: 400;
   text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.6);
 }
-/* line 149, ../sass/_intro.scss */
+/* line 157, ../sass/_intro.scss */
 .start #intro p.introducing {
   top: -100px;
   opacity: 0;
   transition: all 1s 3s;
 }
-/* line 156, ../sass/_intro.scss */
+/* line 164, ../sass/_intro.scss */
 #intro .iris {
   border: solid 1400px black;
-  border-radius: 3000px;
-  width: 2800px;
-  height: 2800px;
+  border-radius: 100%;
+  width: 300%;
+  height: 300%;
   z-index: 100;
   position: absolute;
-  left: -600px;
-  top: -1100px;
+  left: -50%;
+  top: -150%;
   background-color: trans;
   box-sizing: border-box;
-  display: none;
+  opacity: 0.5;
   z-index: 250;
 }
-/* line 171, ../sass/_intro.scss */
+/* line 180, ../sass/_intro.scss */
 .start #intro .iris {
   border-width: 0px;
-  left: -900px;
+  left: -80%;
   transition: left 5s ease-out 1s, width 3s, height 3s, border-width 3s 4s, top 0s 5.5s;
   top: -9999px;
-  width: 3000px;
-  height: 3000px;
+  width: 350%;
+  height: 350%;
 }
-/* line 181, ../sass/_intro.scss */
+/* line 190, ../sass/_intro.scss */
 #intro .berlin-skyline {
   width: 100%;
   height: auto;
   bottom: 0;
   position: absolute;
 }
-/* line 192, ../sass/_intro.scss */
+/* line 201, ../sass/_intro.scss */
 .scrolling #intro .berlin-skyline {
   background-position-y: -340px;
   height: 80px;
   transition: all 1s;
 }
-/* line 199, ../sass/_intro.scss */
+/* line 208, ../sass/_intro.scss */
 #intro .background {
   width: 100%;
   height: auto;
 }
-/* line 208, ../sass/_intro.scss */
+/* line 217, ../sass/_intro.scss */
 #intro h1.full-name {
   font-family: 'Bangers';
   top: 280px;
@@ -258,17 +258,17 @@ body:hover #intro .curtain.draw {
   left: -500px;
   z-index: 200;
 }
-/* line 217, ../sass/_intro.scss */
+/* line 226, ../sass/_intro.scss */
 .start #intro h1.full-name {
   left: 50px;
   transition: left 1s 5s;
 }
-/* line 221, ../sass/_intro.scss */
+/* line 230, ../sass/_intro.scss */
 .scrolling #intro h1.full-name {
   top: 0;
   transition: top 1s;
 }
-/* line 226, ../sass/_intro.scss */
+/* line 235, ../sass/_intro.scss */
 #intro h2.job-title {
   font-family: 'Chau Philomene One';
   top: 400px;
@@ -276,17 +276,17 @@ body:hover #intro .curtain.draw {
   right: -500px;
   z-index: 200;
 }
-/* line 234, ../sass/_intro.scss */
+/* line 243, ../sass/_intro.scss */
 .start #intro h2.job-title {
   right: 300px;
   transition: right 1s 6s;
 }
-/* line 238, ../sass/_intro.scss */
+/* line 247, ../sass/_intro.scss */
 .scrolling #intro h2.job-title {
   top: 0;
   transition: top 1s;
 }
-/* line 243, ../sass/_intro.scss */
+/* line 252, ../sass/_intro.scss */
 #intro .lightbulb {
   background: transparent url(../images/lightbulb-off.png) no-repeat center center;
   width: 160px;
@@ -300,13 +300,13 @@ body:hover #intro .curtain.draw {
   -webkit-filter: drop-shadow(4px 4px 0px #5a87aa);
   filter: drop-shadow(4px 4px 0px #5a87aa);
 }
-/* line 257, ../sass/_intro.scss */
+/* line 266, ../sass/_intro.scss */
 .start #intro .lightbulb {
   background-image: url(../images/lightbulb.png);
   opacity: 1;
   transition: opacity 1s 6s, background 0.5s 7.5s;
 }
-/* line 263, ../sass/_intro.scss */
+/* line 272, ../sass/_intro.scss */
 .scrolling #intro .lightbulb {
   top: 0;
   right: 100px;
@@ -314,7 +314,7 @@ body:hover #intro .curtain.draw {
   background-size: auto 80px;
   transition: all 1s;
 }
-/* line 272, ../sass/_intro.scss */
+/* line 281, ../sass/_intro.scss */
 #intro .overlay {
   background-color: black;
   opacity: 0;
@@ -325,12 +325,12 @@ body:hover #intro .curtain.draw {
   bottom: 0;
   z-index: 50;
 }
-/* line 279, ../sass/_intro.scss */
+/* line 288, ../sass/_intro.scss */
 .start #intro .overlay {
   opacity: 0.4;
   transition: opacity 3s 4s;
 }
-/* line 285, ../sass/_intro.scss */
+/* line 294, ../sass/_intro.scss */
 #intro .wall {
   width: 8.8709677419%;
   height: auto;
@@ -340,7 +340,7 @@ body:hover #intro .curtain.draw {
   position: absolute;
   cursor: pointer;
 }
-/* line 297, ../sass/_intro.scss */
+/* line 306, ../sass/_intro.scss */
 .start #intro .wall {
   bottom: 5.4%;
   left: 29.9%;
@@ -348,12 +348,12 @@ body:hover #intro .curtain.draw {
   height: auto;
   transition: bottom 5s ease-out 1.5s, left 5s ease-out 1.5s, width 5s ease-out 1.5s, height 5s ease-out 1.5s, filter 1s 0s;
 }
-/* line 309, ../sass/_intro.scss */
+/* line 318, ../sass/_intro.scss */
 .start #intro .wall:hover {
   -webkit-filter: drop-shadow(40px 40px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-40px -40px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-40px 40px 0 rgba(0, 0, 255, 0.5)) drop-shadow(40px -40px 0 rgba(255, 255, 0, 0.5));
   filter: drop-shadow(40px 40px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-40px -40px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-40px 40px 0 rgba(0, 0, 255, 0.5)) drop-shadow(40px -40px 0 rgba(255, 255, 0, 0.5));
 }
-/* line 314, ../sass/_intro.scss */
+/* line 323, ../sass/_intro.scss */
 .scrolling #intro .wall {
   top: -97px;
   margin-top: 80px;
@@ -362,7 +362,7 @@ body:hover #intro .curtain.draw {
   width: 110px;
   height: 146px;
 }
-/* line 321, ../sass/_intro.scss */
+/* line 330, ../sass/_intro.scss */
 .scrolling #intro .wall:hover {
   -webkit-filter: drop-shadow(10px 10px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-20px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-10px 10px 0 rgba(0, 0, 255, 0.5)) drop-shadow(0px 0 rgba(255, 255, 0, 0.5));
   filter: drop-shadow(10px 10px 0 rgba(255, 0, 0, 0.5)) drop-shadow(-20px 0 rgba(0, 255, 0, 0.5)) drop-shadow(-10px 10px 0 rgba(0, 0, 255, 0.5)) drop-shadow(0px 0 rgba(255, 255, 0, 0.5));

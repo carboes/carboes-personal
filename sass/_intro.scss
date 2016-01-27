@@ -54,9 +54,9 @@ body {
 			left: 0;
 			right: 0;
 			z-index: 200;
-			background: transparent url(../images/curtains.png) repeat center top;
-			background-size: 100% 100%;
-			height: 100%;
+			background: transparent url(../images/curtains.png) repeat center center;
+			background-size: 100% auto;
+			height: auto;
 			z-index: 300;
 			
 			@include filter( drop-shadow(0 10px 10px black) );
@@ -75,12 +75,20 @@ body {
 			background: transparent url(../images/curtains2.jpg) repeat center top;
 			background-size: 130% auto;
 			z-index: 150;
-			transition: all 1s ease-in;
+			transition:
+				left 1s ease-in,
+				right 1s ease-in,
+				opacity 1s 3s;
 			opacity: 0.3;
 			body:hover & {
 				opacity: 1;
 			}
 			z-index: 275;
+			
+			.start & {
+				//opacity: 0;
+				//transition: opacity 1s 3s;
+			}
 		}
 		&.left {
 			left: 0;
@@ -155,26 +163,27 @@ body {
 
 	.iris {
 		border: solid 1400px black;
-	    border-radius: 3000px;
-	    width: 2800px;
-	    height: 2800px;
+	    border-radius: 100%;
+	    width: 300%;//2800px;
+	    height: 300%;//2800px;
 	    z-index: 100;
 	    position: absolute;
-	    left: -600px;
-	    top: -1100px;
+	    left: -50%;//-100%;//-600px;
+	    top: -150%;//-1100px;
 	    background-color: trans;
 	    box-sizing: border-box;
-	    display: none;
+	    //display: none;
+	    opacity: 0.5;
 
 	    z-index: 250;
 
 	    .start & {
 	    	border-width: 0px;
-			left: -900px;
+			left: -80%;//-900px;
 	    	transition: left 5s ease-out 1s, width 3s, height 3s, border-width 3s 4s, top 0s 5.5s;
 	    	top: -9999px;
-	    	width: 3000px;
-	    	height: 3000px;
+	    	width: 350%;//3000px;
+	    	height: 350%;//3000px;
 		}
 	}
 
