@@ -5,6 +5,7 @@ declare type Options = {
     autoRotate?: boolean;
     stats?: boolean;
     cameraPosition?: Vector3;
+    compression?: boolean;
 };
 export declare const init: (modelPath: string, options: Options) => void;
 export {};
