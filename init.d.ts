@@ -6,6 +6,7 @@ declare type Options = {
     stats?: boolean;
     cameraPosition?: Vector3;
     compression?: boolean;
+    soften?: boolean;
 };
 export declare const init: (modelPath: string, options: Options) => void;
 export {};
