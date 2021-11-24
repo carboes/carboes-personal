@@ -1,5 +1,4 @@
 import { Vector3 } from 'three';
-import './styles.css';
 declare type Options = {
     target?: Vector3;
     autoRotate?: boolean;
@@ -8,5 +7,5 @@ declare type Options = {
     compression?: boolean;
     soften?: boolean;
 };
-export declare const init: (modelPath: string, options: Options) => void;
-export {};
+declare const _default: (modelPath: string, options: Options) => void;
+export default _default;
