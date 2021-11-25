@@ -1,1 +1,1 @@
-export declare const loadTexture: () => import("three").CubeTexture;
+export declare const loadTexture: () => void;
