@@ -5,4 +5,4 @@ import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
 import { GLBType } from './types';
 export declare const setLoaded: (_loaded: boolean) => void;
 export declare const checkLoaded: (scene: Scene, gltf: GLTF) => void;
-export declare const loadModels: (scene: Scene, mixers: AnimationMixer[], renderer: WebGLRenderer, modelPath: string, glbtype: GLBType, compress?: boolean) => void;
+export declare const loadModels: (scene: Scene, mixers: AnimationMixer[], renderer: WebGLRenderer, modelPath: string, glbtype: GLBType, compression?: boolean, staticPath?: string) => void;
