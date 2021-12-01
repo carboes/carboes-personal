@@ -1,5 +1,7 @@
 import { RenderMessage } from 'common/src/character/types/character-render-message';
 import { Vector3 } from 'three';
+import { Color as CharacterColor, Genesis } from 'common/src/character/types';
+import { GLBType } from 'common/src/glb-iframe/types';
 export declare type GLBSetting = {
     target: Vector3;
     autoRotate: boolean;
@@ -8,13 +10,14 @@ export declare type GLBSetting = {
 export declare type GLBSettings = {
     [key in GLBType]: GLBSetting;
 };
-export declare enum GLBType {
-    Character = "character",
-    Brain = "brain"
-}
 export declare type OpenSeaData = {
     type: GLBType;
     glb: string;
     baseUri: string;
     meta?: RenderMessage;
+};
+export declare type CharacterMeta = {
+    color: CharacterColor;
+    genesis: Genesis;
+    configurable: boolean;
 };
